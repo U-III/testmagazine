@@ -1,6 +1,8 @@
 <?PHP
 define ("TESTMAGAZINE", true); 
-define('USE_CACHE', false); // использовать ли кеш.
+define("USE_CACHE", true); // использовать ли кеш.
+define ("TIMEPRODUCTS", 60); //время кеширования списка продуктов
+define ("TIMEPRODUCT", 300); //время кеширование информации о продукте
 require_once('mysql.php');
 define ("DBHOST", "localhost"); 
 define ("DBNAME", "test");
