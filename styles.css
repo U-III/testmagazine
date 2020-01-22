@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,900');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+.container { width: 100%; max-width: 1200px; padding: 0 15px; margin: 0 auto; }
+
+html { background: url('./img/pattern.png') repeat; font-family: 'Lato', sans-serif; font-size: 16px; }
+
+header    { padding: 20px 0 }
+header h1 { font-weight: 900; color: #424242; font-size: 3rem; text-align: center }
+header h2 { font-weight: 600; color: #424242; font-size: 1.3rem; text-align: center }
+
+main .container { background: #fff; border-radius: 5px; padding: 15px; }
+main table { border-spacing: 0px; width: 100%; }
+main table td { padding: 10px 5px; }
+main table thead td { font-size: 1rem; font-weight: bold; }
+main table tr {}
+main table tr.group-name td { text-align: center; font-size: 1.2rem; font-weight: bold; }
+main table tr.product p.title { font-size: 1.1rem; font-weight: bold; }
+main table tr.product p.desc { font-style: italic; }
+main table tr.product button { border: 0; background: #424242; border-radius: 5px; padding: 8px 10px; color: #FFF; font-weight: bold; cursor: pointer; width: 100%; }
+main button { border: 0; background: #424242; border-radius: 5px; padding: 8px 10px; color: #FFF; font-weight: bold; cursor: pointer; width: 100%; }
+
+footer a { margin: 0 10px; }
+
+.container.text-page { max-width: 900px }
+.text-page h1,
+.text-page h2  { text-align: center; margin: 30px auto 10px; font-family: serif; font-style: italic; }
+.text-page p   { margin-bottom: 10px; line-height: 1.5; text-indent: 1.5rem  }
+
+@media (max-width: 500px) { html { font-size: 14px; } }
+@media (max-width: 370px) { html { font-size: 12px; } }
+input[type="number"] {
+    -moz-appearance: textfield;
+    width: 55px;
+    height: 30px;
+    padding: 0 5px;
+    box-sizing: border-box;
+    border: 1px solid #424242;
+    color: #383838;
+}
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+div.input-number span, div.input-number input[type="number"]{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0;
+    vertical-align: middle;
+}
+
+div.input-number span {
+    width: 20px;
+    background: #424242;
+    text-align: center;
+    padding: 0;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+}
+
+div.input-number span.minus {
+    border-radius: 3px 0 0 3px;
+}
+div.input-number span.plus {
+    border-radius: 0 3px 3px 0;
+}
+
+img {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+}
+
+/* Disable grayscale on hover */
+tr.product:hover img {
+   -webkit-filter: none;
+   filter: none;
+}
+
+.white-popup, .mfp-content {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 650px;
+  margin: 20px auto;
+}
+
+.mfp-content h3 { text-align: center; margin-bottom: 30px }
+
+.mfp-content table { width: 100%; }
+.mfp-content table td { padding: 5px 10px; }
+.mfp-content table thead td { font-weight: bold }
+.mfp-content table tfoot td { font-weight: bold; text-align: right }
+
+.mfp-content .text-center { text-align: center; padding-top: 20px;}
+.mfp-content .pay-btn {
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    font-weight: bold;
+    background: #0064c6;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    cursor: pointer;
+    transition: all 150ms ease-out;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.mfp-content .pay-btn.yellow {
+    background: #FF8C00;
+}
+.mfp-content .pay-btn.yellow:hover {
+    background: #ff8200;
+}
+.mfp-content .pay-btn.orange {
+    background: #FF720F;
+}
+.mfp-content .pay-btn.orange:hover {
+    background: #E5640D;
+}
+.mfp-content .pay-btn:hover {
+    background: #0051a2;
+    box-shadow: 0px 0px 3px 1px #ccc;
+}
+
+.mfp-content .wm-wrapper { width: 80%; margin: 0 auto;}
+.mfp-content .wm-wrapper input {
+    padding: 5px 10px;
+    margin: 5px 0 15px;
+    background: #efefef;
+    width: 100%;
+    border-radius: 3px;
+}
