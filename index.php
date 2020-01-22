@@ -85,7 +85,7 @@ foreach ($products as &$product) {
 }
 
 if (USE_CACHE) {
-    $cache->set('TESTMAGAZINEPRODUCTS_' . $sort, $products , 60);
+    $cache->set('TESTMAGAZINEPRODUCTS_' . $sort, $products , TIMEPRODUCTS);
 }
 
 $html .= <<<HTML

@@ -112,7 +112,7 @@ HTML;
     HTML;
 
 if (USE_CACHE) {
-    $cache->set('TESTMAGAZINEPRODUCT_'.$productid, $product , 60);
+    $cache->set('TESTMAGAZINEPRODUCT_'.$productid, $product , TIMEPRODUCT);
 }
 
 $html .= <<<HTML
