@@ -39,7 +39,7 @@ if (isset($_GET['id'])) {
 
 if ($productid == 0) ErrorProduct();
 
-$product=$cache->get('TESTMAGAZINEPRODUCTS_'.$productid);
+$product=$cache->get('TESTMAGAZINEPRODUCT_'.$productid);
 if ($product === false || !USE_CACHE) {
     $product = $db->super_query("SELECT product.id, product.name, product.description, product.price, category.name as catname, category.description as catdesc FROM `product` LEFT JOIN category ON product.id_category = category.id where product.id = {$productid} and product.enable = 1 and category.enable = 1 LIMIT 1;");
 }
@@ -112,7 +112,7 @@ HTML;
     HTML;
 
 if (USE_CACHE) {
-    $cache->set('TESTMAGAZINEPRODUCTS_'.$productid, $product , 60);
+    $cache->set('TESTMAGAZINEPRODUCT_'.$productid, $product , 60);
 }
 
 $html .= <<<HTML
